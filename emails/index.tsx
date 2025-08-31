@@ -33,7 +33,7 @@ import AskReviewOrderItemsEmail from './ask-review-order-items'
 import { SENDER_EMAIL, SENDER_NAME } from '@/lib/constants'
 
 // Env থেকে API Key আনলাম
-const resendApiKey = process.env.RESEND_API_KEY
+const resendApiKey = process.env.RESEND_API_KEY || " "
 
 // Key থাকলে Resend instance বানাবো, না থাকলে null
 const resend = resendApiKey ? new Resend(resendApiKey) : null
