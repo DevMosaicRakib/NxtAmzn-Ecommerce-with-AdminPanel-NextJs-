@@ -5,7 +5,7 @@ import { sendPurchaseReceipt } from '@/emails'
 import Order from '@/lib/db/models/order.model'
 
 
-export const runtime = "nodejs"
+// export const runtime = "nodejs"
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || "")
 
